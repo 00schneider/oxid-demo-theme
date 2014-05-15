@@ -4,5 +4,13 @@
     "type": "oxid-theme",
     "require": {
         "php": ">=5.4"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "ln -sf ../application/views/oxid-demo-theme/skin/oxid-demo-theme out/oxid-demo-theme"
+        ],
+        "post-update-cmd": [
+            "ln -sf ../application/views/oxid-demo-theme/skin/oxid-demo-theme out/oxid-demo-theme"
+        ]
     }
 }
